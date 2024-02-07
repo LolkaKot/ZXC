@@ -1,0 +1,1283 @@
+﻿<Window x:Class="WpfApp2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        WindowStyle="None"
+        Background="Transparent"
+        AllowsTransparency="False"
+        ResizeMode="NoResize"
+        WindowStartupLocation="CenterScreen"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid Background="#202020" Cursor="">
+        <TextBlock Name="textBoxName" Text="начнем?" Foreground="White" Margin="355 20 0 0" FontSize="25"/>
+        <Button x:Name="a" Width="100" Height="50" Click="a_Click" Content="старт" Foreground="#53588B" Cursor="Hand">
+            <Button.Template>
+                <ControlTemplate TargetType="Button">
+                    <Border Background="Transparent" BorderBrush="#53588B" BorderThickness="2" CornerRadius="10" >
+                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
+                    </Border>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+        <!--Visibility="Hidden"-->
+        <Button x:Name="btn1" Width="50" Height="30" Margin="0 0 740 250" Visibility="Hidden" Content="1" Foreground="#EFEF6E" Click="btn1_Click">
+            <Button.Template>
+                <ControlTemplate TargetType="Button">
+                    <Border Background="#656556" BorderBrush="#EFEF6E" BorderThickness="2" CornerRadius="10">
+                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
+                    </Border>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+        <TextBlock Name="tack1"  Foreground="White" Margin="85 20 0 0" FontSize="25" Visibility="Hidden">
+         Выислите значение логиеских выражени при следующих <LineBreak/>
+         ㅤㅤзнаениях логиеских переменных А=1 В=0 С=0
+        </TextBlock>
+
+        <Button x:Name="task1_1" Width="110" Height="50" Margin="0 0 0 108" Click="task1_1_Click_1" Content="(А∨¬А)∧С" Foreground="#53588B" Visibility="Hidden" Cursor="Hand">
+            <Button.Template>
+                <ControlTemplate TargetType="Button">
+                    <Border Background="Transparent" BorderBrush="#53588B" BorderThickness="2" CornerRadius="10" >
+                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
+                    </Border>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+        <Button x:Name="task1_2" Width="110" Height="50" Margin="0 0 0 0" Click="task1_2_Click" Content="¬A∨A∧A(B∨C)" Foreground="#53588B" Visibility="Hidden" Cursor="Hand">
+            <Button.Template>
+                <ControlTemplate TargetType="Button">
+                    <Border Background="Transparent" BorderBrush="#53588B" BorderThickness="2" CornerRadius="10" >
+                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
+                    </Border>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+        <Button x:Name="task1_3" Width="110" Height="50" Margin="0 108 0 0" Click="task1_3_Click" Content="(A∨B∧¬C)∧C" Foreground="#53588B" Visibility="Hidden" Cursor="Hand">
+            <Button.Template>
+                <ControlTemplate TargetType="Button">
+                    <Border Background="Transparent" BorderBrush="#53588B" BorderThickness="2" CornerRadius="10" >
+                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
+                    </Border>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+
+        <TextBlock Name="True" Text="правильно" Foreground="#70DA70" Margin="345 400 0 0" FontSize="25" Visibility="Hidden" />
+        <TextBlock Name="False" Text="не правильно" Foreground="#C85F5F" Margin="325 400 0 0" FontSize="25" Visibility="Hidden" />
+
+
+
+
+
+
+
+
+
+
+
+        <Button x:Name="btnback" Width="50" Height="30" Margin="0 0 634 250" Visibility="Hidden" Click="btnback_Click_1" Content="←" Foreground="#EFEF6E">
+            <Button.Template>
+                <ControlTemplate TargetType="Button">
+                    <Border Background="#656556" BorderBrush="#EFEF6E" BorderThickness="2" CornerRadius="10" Cursor="">
+                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
+                    </Border>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+        
+        
+        
+        <Button x:Name="btn2" Width="50" Height="30" Margin="0 0 740 185" Click="btn2_Click" Visibility="Hidden" Content="2" Foreground="#EFEF6E">
+            <Button.Template>
+                <ControlTemplate TargetType="Button">
+                    <Border Background="#656556" BorderBrush="#EFEF6E" BorderThickness="2" CornerRadius="10">
+                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
+                    </Border>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+        <TextBlock Name="tack2"  Foreground="White" Margin="85 20 0 0" Visibility="Hidden" FontSize="25">
+  Выислите значение логиеских выражени при следующих <LineBreak/>
+  ㅤㅤзнаениях логиеских переменных X=0 Y=1 Z=0
+        </TextBlock>
+
+        <Button x:Name="task2_1" Width="110" Height="50" Margin="0 0 0 108" Visibility="Hidden" Click="task2_1_Click" Content="X∧¬(Z∨Y)∨¬Z" Foreground="#53588B" Cursor="Hand">
+            <Button.Template>
+                <ControlTemplate TargetType="Button">
+                    <Border Background="Transparent" BorderBrush="#53588B" BorderThickness="2" CornerRadius="10" >
+                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
+                    </Border>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+
+        <Button x:Name="task2_2" Width="110" Height="50" Margin="0 0 0 0" Visibility="Hidden" Click="task2_2_Click" Content="¬X∨X∧(Y∨Z)" Foreground="#53588B" Cursor="Hand">
+            <Button.Template>
+                <ControlTemplate TargetType="Button">
+                    <Border Background="Transparent" BorderBrush="#53588B" BorderThickness="2" CornerRadius="10" >
+                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
+                    </Border>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+
+
+        <Button x:Name="task2_3" Width="110" Height="50" Margin="0 108 0 0" Visibility="Hidden" Click="task2_3_Click" Content="(X∨Y∧¬Z)∧Z" Foreground="#53588B" Cursor="Hand">
+            <Button.Template>
+                <ControlTemplate TargetType="Button">
+                    <Border Background="Transparent" BorderBrush="#53588B" BorderThickness="2" CornerRadius="10" >
+                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
+                    </Border>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+
+        
+        
+        
+        <Button x:Name="btn3" Width="50" Height="30" Margin="0 0 634 185"  Visibility="Hidden" Click="btn3_Click" Content="3" Foreground="#EFEF6E">
+            <Button.Template>
+                <ControlTemplate TargetType="Button">
+                    <Border Background="#656556" BorderBrush="#EFEF6E" BorderThickness="2" CornerRadius="10">
+                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
+                    </Border>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+
+        <TextBlock Foreground="White" Margin="175 20 0 0" FontSize="25" x:Name="task3" Visibility="Hidden">
+            Вычислите знаение логического выражения
+        </TextBlock>
+        <TextBlock Foreground="White" Margin="188 45 0 0" FontSize="25" x:Name="task3_5" Visibility="Hidden">Введите ответ в виде 1(правда) или 0(лож)</TextBlock>
+
+
+        <StackPanel Margin="145 200 0 0">
+            <TextBlock Foreground="White" x:Name="task3_3" FontSize="20" Visibility="Hidden">
+         (¬(x*y≺0))∧(y≻x) <LineBreak/> при x=2 y=1
+            </TextBlock>
+            <TextBox x:Name="task3_2" Text="" Background="White" FontSize="23" Height="40" Width="80" Margin="-272 -62 0 0" Visibility="Hidden"></TextBox>
+        </StackPanel>
+        
+        <StackPanel Margin="460 200 0 0">
+            <TextBlock Foreground="White" FontSize="20" Visibility="Hidden" x:Name="task3_4">
+         (x≥2)∨(y²≠5) <LineBreak/> при x=2 y=-2
+            </TextBlock>
+            <TextBox x:Name="task3_1"  Text="" Background="White" FontSize="23" Height="40" Width="80" Margin="18 -62 0 0" Visibility="Hidden"></TextBox>
+        </StackPanel>
+
+
+        <Button x:Name="Check" Click="Check_Click" Margin="0 350 0 0" FontSize="25" Height="50" Width="210" Content="проверить" Visibility="Hidden" Background="Transparent" Foreground="White" BorderBrush="White"></Button>
+
+
+
+
+
+        <Button x:Name="btn4" Width="50" Height="30" Margin="0 0 740 120" Click="btn4_Click" Visibility="Hidden" Content="4" Foreground="#EFEF6E">
+            <Button.Template>
+                <ControlTemplate TargetType="Button">
+                    <Border Background="#656556" BorderBrush="#EFEF6E" BorderThickness="2" CornerRadius="10">
+                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
+                    </Border>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+        <TextBlock x:Name="task4" Foreground="White" FontSize="25" Margin="130 8 0 0" Visibility="Hidden">Запишите уловие, которое является истеным, <LineBreak/>ㅤㅤкогда целое А кратно двум или трём</TextBlock>
+        <StackPanel>
+            <TextBlock x:Name="task4_1" Foreground="White" FontSize="25" Margin="330 208 0 0" Visibility="Hidden">A=</TextBlock>
+            <TextBox x:Name="task4_2" Height="40" Width="100" FontSize="25" Margin="40 -34 0 0" Background="White" Text="" Visibility="Hidden"></TextBox>
+            <Button x:Name="Check1" Click="Check1_Click" Margin="0 142 0 0" FontSize="25" Height="50" Width="210" Content="проверить" Visibility="Hidden" Background="Transparent" Foreground="White" BorderBrush="White"></Button>
+        </StackPanel>
+        
+        
+        
+        
+        
+        
+        <Button x:Name="btn5" Click="btn5_Click" Width="50" Height="30" Margin="0 0 634 120"  Visibility="Hidden" Content="5" Foreground="#EFEF6E">
+            <Button.Template>
+                <ControlTemplate TargetType="Button">
+                    <Border Background="#656556" BorderBrush="#EFEF6E" BorderThickness="2" CornerRadius="10">
+                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
+                    </Border>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+
+        <TextBlock x:Name="task5" Foreground="White" FontSize="25" Margin="130 8 0 0" Visibility="Hidden">Запишите уловие, которое является истеным, <LineBreak/>ㅤㅤкогда каждое из чисел А и В нечетное</TextBlock>
+        <StackPanel>
+            <TextBlock x:Name="task5_1" Foreground="White" FontSize="25" Margin="330 208 0 0" Visibility="Hidden">A=</TextBlock>
+            <TextBox x:Name="task5_2" Height="40" Width="100" FontSize="25" Margin="40 -34 0 0" Background="White" Text="" Visibility="Hidden"></TextBox>
+            <TextBlock x:Name="task5_3" Foreground="White" FontSize="25" Margin="330 8 0 0" Visibility="Hidden">В=</TextBlock>
+            <TextBox x:Name="task5_4" Height="40" Width="100" FontSize="25" Margin="40 -34 0 0" Background="White" Text="" Visibility="Hidden"></TextBox>
+            <Button x:Name="Check2" Click="Check2_Click"  Margin="0 92 0 0" FontSize="25" Height="50" Width="210" Content="проверить"  Background="Transparent" Foreground="White" BorderBrush="White" Visibility="Hidden"></Button>
+        </StackPanel>
+
+
+        
+        
+        
+
+        <Button x:Name="btn6"  Click="btn6_Click" Width="50" Height="30" Margin="0 0 740 54" Visibility="Hidden" Content="6" Foreground="#EFEF6E">
+            <Button.Template>
+                <ControlTemplate TargetType="Button">
+                    <Border Background="#656556" BorderBrush="#EFEF6E" BorderThickness="2" CornerRadius="10">
+                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
+                    </Border>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+
+
+        <TextBlock x:Name="task6"  Foreground="White" Margin="85 20 0 0" FontSize="25" Visibility="Hidden">
+         Выислите значение логиеских выражени при следующих <LineBreak/>
+         ㅤㅤзнаениях логиеских переменных X=0 Y=0 Z=1
+        </TextBlock>
+
+        <Button x:Name="task6_1" Click="task6_1_Click" Width="110" Height="50" Margin="0 0 0 108"  Content="X∨Y∧¬Z" Foreground="#53588B" Visibility="Hidden" Cursor="Hand">
+            <Button.Template>
+                <ControlTemplate TargetType="Button">
+                    <Border Background="Transparent" BorderBrush="#53588B" BorderThickness="2" CornerRadius="10" >
+                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
+                    </Border>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+        <Button x:Name="task6_2" Click="task6_2_Click" Width="110" Height="50" Margin="0 0 0 0"  Content="¬X∧¬Y" Foreground="#53588B" Visibility="Hidden" Cursor="Hand">
+            <Button.Template>
+                <ControlTemplate TargetType="Button">
+                    <Border Background="Transparent" BorderBrush="#53588B" BorderThickness="2" CornerRadius="10" >
+                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
+                    </Border>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+        <Button x:Name="task6_3" Click="task6_3_Click" Width="110" Height="50" Margin="0 108 0 0"  Content="¬(X∧Z)∨Y" Foreground="#53588B" Visibility="Hidden" Cursor="Hand">
+            <Button.Template>
+                <ControlTemplate TargetType="Button">
+                    <Border Background="Transparent" BorderBrush="#53588B" BorderThickness="2" CornerRadius="10" >
+                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
+                    </Border>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+
+
+
+        <Button x:Name="btn7" Click="btn7_Click" Width="50" Height="30" Margin="0 0 634 54" Visibility="Hidden" Content="7" Foreground="#EFEF6E">
+            <Button.Template>
+                <ControlTemplate TargetType="Button">
+                    <Border Background="#656556" BorderBrush="#EFEF6E" BorderThickness="2" CornerRadius="10">
+                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
+                    </Border>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+        <TextBlock x:Name="task7"  Foreground="White" Margin="335 20 0 0" FontSize="25" Visibility="Hidden">Микрофон?</TextBlock>
+        <Button x:Name="da" Click="da_Click" Foreground="White" BorderBrush="White" Margin="0 0 0 38" Width="100" Visibility="Hidden">да</Button>
+        <Button x:Name="net" Click="net_Click" Foreground="White" BorderBrush="White" Margin="0 46 0 0" Width="100" Visibility="Hidden">нет</Button>
+        <TextBlock x:Name="lopata" Foreground="White" FontSize="25" Margin="360 400 0 0" Visibility="Hidden">лопата</TextBlock>
+        <TextBlock x:Name="kocherga" Foreground="White" FontSize="25" Margin="354 400 0 0" Visibility="Hidden">кочерга</TextBlock>
+
+
+
+
+
+
+
+
+
+        <Button x:Name="btn8" Click="btn8_Click" Width="50" Height="30" Margin="0 11 740 0" Visibility="Hidden" Content="8" Foreground="#EFEF6E">
+            <Button.Template>
+                <ControlTemplate TargetType="Button">
+                    <Border Background="#656556" BorderBrush="#EFEF6E" BorderThickness="2" CornerRadius="10">
+                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
+                    </Border>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+        <TextBlock Foreground="White" Margin="175 20 0 0" FontSize="25" x:Name="task8" Visibility="Hidden">
+     Вычислите знаение логического выражения
+        </TextBlock>
+        <TextBlock Foreground="White" Margin="188 45 0 0" FontSize="25" x:Name="task8_1" Visibility="Hidden">Введите ответ в виде 1(правда) или 0(лож)</TextBlock>
+
+
+        <StackPanel Margin="145 200 0 0">
+            <TextBlock Foreground="White" x:Name="task8_2" FontSize="20" Visibility="Hidden">
+  (x≥0)∧(y²≠4) <LineBreak/> при x=1 y=2
+            </TextBlock>
+            <TextBox x:Name="task8_3" Text="" Background="White" FontSize="23" Height="40" Width="80" Margin="-272 -62 0 0" Visibility="Hidden"></TextBox>
+        </StackPanel>
+
+        <StackPanel Margin="460 200 0 0">
+            <TextBlock Foreground="White" FontSize="20" Visibility="Hidden" x:Name="task8_4">
+  (x*y≠0)∨(y≻x) <LineBreak/> при x=2 y=1
+            </TextBlock>
+            <TextBox x:Name="task8_5"  Text="" Background="White" FontSize="23" Height="40" Width="80" Margin="18 -62 0 0" Visibility="Hidden"></TextBox>
+        </StackPanel>
+
+
+        <Button x:Name="Check3" Click="Check3_Click" Margin="0 350 0 0" FontSize="25" Height="50" Width="210" Content="проверить" Visibility="Hidden" Background="Transparent" Foreground="White" BorderBrush="White"></Button>
+
+
+
+
+
+
+
+
+
+
+
+        <Button x:Name="btn9" Click="btn9_Click" Width="50" Height="30" Margin="0 11 634 0" Visibility="Hidden" Content="9" Foreground="#EFEF6E">
+            <Button.Template>
+                <ControlTemplate TargetType="Button">
+                    <Border Background="#656556" BorderBrush="#EFEF6E" BorderThickness="2" CornerRadius="10">
+                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
+                    </Border>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+
+        <TextBlock Foreground="White" Margin="175 20 0 0" FontSize="25" x:Name="task9" Visibility="Hidden">
+   Вычислите знаение логического выражения
+        </TextBlock>
+        <TextBlock Foreground="White" Margin="188 45 0 0" FontSize="25" x:Name="task9_1" Visibility="Hidden">Введите ответ в виде 1(правда) или 0(лож)</TextBlock>
+
+
+        <StackPanel Margin="145 200 0 0">
+            <TextBlock Foreground="White" x:Name="task9_2" FontSize="20" Visibility="Hidden">
+(¬(x*y≺0))∨(y≻x) <LineBreak/> при x=1 y=2
+            </TextBlock>
+            <TextBox x:Name="task9_3" Text="" Background="White" FontSize="23" Height="40" Width="80" Margin="-272 -62 0 0" Visibility="Hidden"></TextBox>
+        </StackPanel>
+
+        <StackPanel Margin="460 200 0 0">
+            <TextBlock Foreground="White" FontSize="20" Visibility="Hidden" x:Name="task9_4">
+ (x*y≠0)∧(y≺x)<LineBreak/> при x=2 y=1
+            </TextBlock>
+            <TextBox x:Name="task9_5"  Text="" Background="White" FontSize="23" Height="40" Width="80" Margin="18 -62 0 0" Visibility="Hidden"></TextBox>
+        </StackPanel>
+
+
+        <Button x:Name="Check4" Click="Check4_Click" Margin="0 350 0 0" FontSize="25" Height="50" Width="210" Content="проверить" Visibility="Hidden" Background="Transparent" Foreground="White" BorderBrush="White"></Button>
+
+
+
+
+
+
+
+
+
+
+        <Button x:Name="btn10" Click="btn10_Click" Width="50" Height="30" Margin="0 78 740 0" Visibility="Hidden" Content="10" Foreground="#EFEF6E">
+            <Button.Template>
+                <ControlTemplate TargetType="Button">
+                    <Border Background="#656556" BorderBrush="#EFEF6E" BorderThickness="2" CornerRadius="10">
+                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
+                    </Border>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+        
+        <TextBlock x:Name="task10" Foreground="White" Margin="85 20 0 0" FontSize="25" Visibility="Hidden">
+ Выислите значение логиеских выражени при следующих <LineBreak/>
+ ㅤㅤзнаениях логиеских переменных A=1 B=0 C=1
+</TextBlock>
+
+        <Button x:Name="task10_1" Click="task10_1_Click" Width="110" Height="50" Margin="0 0 0 108"  Content="A∨¬(A∧B)∨C" Foreground="#53588B" Visibility="Hidden" Cursor="Hand">
+    <Button.Template>
+        <ControlTemplate TargetType="Button">
+            <Border Background="Transparent" BorderBrush="#53588B" BorderThickness="2" CornerRadius="10" >
+                <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
+            </Border>
+        </ControlTemplate>
+    </Button.Template>
+</Button>
+        <Button x:Name="task10_2" Click="task10_2_Click" Width="110" Height="50" Margin="0 0 0 0"  Content="¬A∨C∧¬(B∨C)" Foreground="#53588B" Visibility="Hidden" Cursor="Hand">
+    <Button.Template>
+        <ControlTemplate TargetType="Button">
+            <Border Background="Transparent" BorderBrush="#53588B" BorderThickness="2" CornerRadius="10" >
+                <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
+            </Border>
+        </ControlTemplate>
+    </Button.Template>
+</Button>
+        <Button x:Name="task10_3" Click="task10_3_Click" Width="110" Height="50" Margin="0 108 0 0"  Content="(A∨B∧¬C)∨A" Foreground="#53588B" Visibility="Hidden" Cursor="Hand">
+    <Button.Template>
+        <ControlTemplate TargetType="Button">
+            <Border Background="Transparent" BorderBrush="#53588B" BorderThickness="2" CornerRadius="10" >
+                <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
+            </Border>
+        </ControlTemplate>
+    </Button.Template>
+</Button>
+
+        
+        
+        
+        
+        
+        
+        
+        <Button x:Name="btn11" Click="btn11_Click" Width="50" Height="30" Margin="0 78 634 0" Visibility="Hidden" Content="11" Foreground="#EFEF6E">
+            <Button.Template>
+                <ControlTemplate TargetType="Button">
+                    <Border Background="#656556" BorderBrush="#EFEF6E" BorderThickness="2" CornerRadius="10">
+                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
+                    </Border>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+        <TextBlock Foreground="White" Margin="175 20 0 0" FontSize="25" x:Name="task11" Visibility="Hidden">
+   Вычислите знаение логического выражения
+        </TextBlock>
+        <TextBlock Foreground="White" Margin="188 45 0 0" FontSize="25" x:Name="task11_1" Visibility="Hidden">Введите ответ в виде 1(правда) или 0(лож)</TextBlock>
+
+
+        <StackPanel Margin="145 200 0 0">
+            <TextBlock Foreground="White" x:Name="task11_2" FontSize="20" Visibility="Hidden">
+(¬(x*y≺1))∧(y≻x) <LineBreak/> при x=1 y=2
+            </TextBlock>
+            <TextBox x:Name="task11_3" Text="" Background="White" FontSize="23" Height="40" Width="80" Margin="-272 -62 0 0" Visibility="Hidden"></TextBox>
+        </StackPanel>
+
+        <StackPanel Margin="460 200 0 0">
+            <TextBlock Foreground="White" FontSize="20" Visibility="Hidden" x:Name="task11_4">
+ (x*y≠0)∧(y≺x)<LineBreak/> при x=2 y=1
+            </TextBlock>
+            <TextBox x:Name="task11_5"  Text="" Background="White" FontSize="23" Height="40" Width="80" Margin="18 -62 0 0" Visibility="Hidden"></TextBox>
+        </StackPanel>
+
+
+        <Button x:Name="Check5" Click="Check5_Click" Margin="0 350 0 0" FontSize="25" Height="50" Width="210" Content="проверить" Visibility="Hidden" Background="Transparent" Foreground="White" BorderBrush="White"></Button>
+
+
+
+
+
+
+
+
+
+        <Button x:Name="btn12" Click="btn12_Click" Width="50" Height="30" Margin="0 145 740 0" Visibility="Hidden" Content="12" Foreground="#EFEF6E">
+            <Button.Template>
+                <ControlTemplate TargetType="Button">
+                    <Border Background="#656556" BorderBrush="#EFEF6E" BorderThickness="2" CornerRadius="10">
+                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
+                    </Border>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+
+        <TextBlock x:Name="task12" Foreground="White" FontSize="25" Margin="150 8 0 0" Visibility="Hidden">Запишите А, чтобы оно было трехзначным</TextBlock>
+        <TextBlock x:Name="task12_1" Foreground="White" FontSize="25" Margin="330 208 0 0" Visibility="Hidden">A=</TextBlock>
+        <TextBox x:Name="task12_2" Height="40" Width="100" FontSize="25" Margin="40 0 0 0" Background="White" Text="" Visibility="Hidden"></TextBox>
+        <Button x:Name="Check6" Click="Check6_Click" Margin="0 380 0 0" FontSize="25" Height="50" Width="210" Content="проверить" Visibility="Hidden" Background="Transparent" Foreground="White" BorderBrush="White"></Button>
+
+
+
+        <Button x:Name="btn13" Click="btn13_Click" Width="50" Height="30" Margin="0 145 634 0" Visibility="Hidden" Content="13" Foreground="#EFEF6E">
+            <Button.Template>
+                <ControlTemplate TargetType="Button">
+                    <Border Background="#656556" BorderBrush="#EFEF6E" BorderThickness="2" CornerRadius="10">
+                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
+                    </Border>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+        <StackPanel>
+        <TextBlock x:Name="task131" Foreground="White" FontSize="25" Margin="50 8 0 0" Visibility="Hidden" Text="Запишите А, В и С чтобы только одна из них было меньше 45"/>
+        </StackPanel>
+        <TextBlock x:Name="task13_3" Foreground="White" FontSize="25" Margin="330 260 0 0" Visibility="Hidden">В=</TextBlock>
+        <TextBlock x:Name="task13_1" Foreground="White" FontSize="25" Margin="330 208 0 0" Visibility="Hidden">A=</TextBlock>
+        <TextBlock x:Name="task13_5" Foreground="White" FontSize="25" Margin="330 306 0 0" Visibility="Hidden">С=</TextBlock>
+        <TextBox x:Name="task13_4" Height="40" Width="100" FontSize="25" Margin="40 0 0 0" Visibility="Hidden" Background="White" Text=""  Cursor=""></TextBox>
+        <TextBox x:Name="task13_2" Height="40" Width="100" FontSize="25" Margin="40 100 0 0" Visibility="Hidden" Background="White" Text="" Cursor=""></TextBox>
+        <TextBox x:Name="task13_6" Height="40" Width="100" FontSize="25" Margin="40 200 0 0" Visibility="Hidden" Background="White" Text=""  Cursor=""></TextBox>
+        <Button x:Name="Check7" Click="Check7_Click" Margin="0 380 0 0" FontSize="25" Height="50" Width="210" Content="проверить" Visibility="Hidden" Background="Transparent" Foreground="White" BorderBrush="White"></Button>
+        
+
+
+
+
+
+
+
+
+        <Button x:Name="btn14" Click="btn14_Click" Width="50" Height="30" Margin="0 212 740 0" Visibility="Hidden" Content="14" Foreground="#EFEF6E">
+            <Button.Template>
+                <ControlTemplate TargetType="Button">
+                    <Border Background="#656556" BorderBrush="#EFEF6E" BorderThickness="2" CornerRadius="10">
+                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
+                    </Border>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+        <StackPanel>
+            <TextBlock x:Name="task14" Foreground="White" FontSize="22" Margin="20 8 0 0" Visibility="Hidden" Text="Запишите целое А, чтобы оно не было кратно трем и оканчивалось на ноль"/>
+        </StackPanel>
+        <TextBlock x:Name="task14_1" Foreground="White" FontSize="25" Margin="330 208 0 0" Visibility="Hidden">A=</TextBlock>
+        <TextBox x:Name="task14_2" Height="40" Width="100" FontSize="25" Margin="40 0 0 0" Background="White" Text="" Visibility="Hidden"></TextBox>
+        <Button x:Name="Check8" Click="Check8_Click" Margin="0 380 0 0" FontSize="25" Height="50" Width="210" Content="проверить" Visibility="Hidden" Background="Transparent" Foreground="White" BorderBrush="White"></Button>
+
+
+
+
+
+
+
+
+        <Button x:Name="btn15" Click="btn15_Click" Width="50" Height="30" Margin="0 212 634 0" Visibility="Hidden" Content="15" Foreground="#EFEF6E">
+            <Button.Template>
+                <ControlTemplate TargetType="Button">
+                    <Border Background="#656556" BorderBrush="#EFEF6E" BorderThickness="2" CornerRadius="10">
+                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
+                    </Border>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+
+        <StackPanel>
+            <TextBlock x:Name="task15" Foreground="White" FontSize="20" Margin="20 8 0 0" Visibility="Hidden" Text="Запишите А, чтобы оно принадлежало интервыалу от -137 до -51 или от 123 до 55"/>
+        </StackPanel>
+        <TextBlock x:Name="task15_1" Foreground="White" FontSize="25" Margin="330 208 0 0" Visibility="Hidden">A=</TextBlock>
+        <TextBox x:Name="task15_2" Height="40" Width="100" FontSize="25" Margin="40 0 0 0" Background="White" Text="" Visibility="Hidden"></TextBox>
+        <Button x:Name="Check9" Click="Check9_Click" Margin="0 380 0 0" FontSize="25" Height="50" Width="210" Content="проверить" Visibility="Hidden" Background="Transparent" Foreground="White" BorderBrush="White"></Button>
+
+
+
+
+
+
+        <Button x:Name="btn16" Click="btn16_Click" Width="50" Height="30" Margin="0 278 740 0" Visibility="Hidden" Content="16" Foreground="#EFEF6E">
+            <Button.Template>
+                <ControlTemplate TargetType="Button">
+                    <Border Background="#656556" BorderBrush="#EFEF6E" BorderThickness="2" CornerRadius="10">
+                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
+                    </Border>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+        <StackPanel>
+            <TextBlock x:Name="task16" Foreground="White" FontSize="25" Margin="50 8 0 0" Visibility="Hidden" Text="Запишите X, Y и Z чтобы только одна из них было кратно пяти"/>
+        </StackPanel>
+        <TextBlock x:Name="task16_1" Foreground="White" FontSize="25" Margin="330 208 0 0" Visibility="Hidden">X=</TextBlock>
+        <TextBlock x:Name="task16_2" Foreground="White" FontSize="25" Margin="330 260 0 0" Visibility="Hidden">Y=</TextBlock>
+        <TextBlock x:Name="task16_3" Foreground="White" FontSize="25" Margin="330 306 0 0" Visibility="Hidden">Z=</TextBlock>
+        <TextBox x:Name="task16_4" Height="40" Width="100" FontSize="25" Margin="40 0 0 0" Visibility="Hidden" Background="White" Text=""  Cursor=""></TextBox>
+        <TextBox x:Name="task16_5" Height="40" Width="100" FontSize="25" Margin="40 100 0 0" Visibility="Hidden" Background="White" Text="" Cursor=""></TextBox>
+        <TextBox x:Name="task16_6" Height="40" Width="100" FontSize="25" Margin="40 200 0 0" Visibility="Hidden" Background="White" Text=""  Cursor=""></TextBox>
+        <Button x:Name="Check10" Click="Check10_Click" Margin="0 380 0 0" FontSize="25" Height="50" Width="210" Content="проверить" Visibility="Hidden" Background="Transparent" Foreground="White" BorderBrush="White"></Button>
+
+
+
+
+        <Button x:Name="btn17" Click="btn17_Click" Width="50" Height="30" Margin="0 278 634 0" Visibility="Hidden" Content="17" Foreground="#EFEF6E">
+            <Button.Template>
+                <ControlTemplate TargetType="Button">
+                    <Border Background="#656556" BorderBrush="#EFEF6E" BorderThickness="2" CornerRadius="10">
+                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
+                    </Border>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+
+        <TextBlock x:Name="task17" Foreground="White" Margin="85 20 0 0" FontSize="25" Visibility="Hidden">
+ Выислите значение логиеских выражени при следующих <LineBreak/>
+ ㅤㅤзнаениях логиеских переменных A=1 B=0 C=0
+        </TextBlock>
+
+        <Button x:Name="task17_1" Click="task17_1_Click" Width="110" Height="50" Margin="0 0 0 108"  Content="A∧¬B∨C" Foreground="#53588B" Visibility="Hidden" Cursor="Hand">
+            <Button.Template>
+                <ControlTemplate TargetType="Button">
+                    <Border Background="Transparent" BorderBrush="#53588B" BorderThickness="2" CornerRadius="10" >
+                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
+                    </Border>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+        <Button x:Name="task17_2" Click="task17_2_Click" Width="110" Height="50" Margin="0 0 0 0"  Content="A∧(¬B∨C)" Foreground="#53588B" Visibility="Hidden" Cursor="Hand">
+            <Button.Template>
+                <ControlTemplate TargetType="Button">
+                    <Border Background="Transparent" BorderBrush="#53588B" BorderThickness="2" CornerRadius="10" >
+                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
+                    </Border>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+        <Button x:Name="task17_3" Click="task17_3_Click" Width="110" Height="50" Margin="0 108 0 0"  Content="A∨(¬(B∧C))" Foreground="#53588B" Visibility="Hidden" Cursor="Hand">
+            <Button.Template>
+                <ControlTemplate TargetType="Button">
+                    <Border Background="Transparent" BorderBrush="#53588B" BorderThickness="2" CornerRadius="10" >
+                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
+                    </Border>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+
+
+
+
+
+
+
+        <Button x:Name="btn18" Click="btn18_Click" Width="50" Height="30" Margin="0 345 740 0" Visibility="Hidden" Content="18" Foreground="#EFEF6E">
+            <Button.Template>
+                <ControlTemplate TargetType="Button">
+                    <Border Background="#656556" BorderBrush="#EFEF6E" BorderThickness="2" CornerRadius="10">
+                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
+                    </Border>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+        <TextBlock x:Name="task18" Foreground="White" Margin="85 20 0 0" FontSize="25" Visibility="Hidden">
+ Выислите значение логиеских выражени при следующих <LineBreak/>
+ ㅤㅤзнаениях логиеских переменных A=0 B=0 C=1
+        </TextBlock>
+
+        <Button x:Name="task18_1" Click="task18_1_Click" Width="110" Height="50" Margin="0 0 0 108"  Content="(¬A∨¬B)∧¬C" Foreground="#53588B" Visibility="Hidden" Cursor="Hand">
+            <Button.Template>
+                <ControlTemplate TargetType="Button">
+                    <Border Background="Transparent" BorderBrush="#53588B" BorderThickness="2" CornerRadius="10" >
+                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
+                    </Border>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+        <Button x:Name="task18_2" Click="task18_2_Click" Width="110" Height="50" Margin="0 0 0 0"  Content="(¬A∨¬B)∧(A∨B)" Foreground="#53588B" Visibility="Hidden" Cursor="Hand">
+            <Button.Template>
+                <ControlTemplate TargetType="Button">
+                    <Border Background="Transparent" BorderBrush="#53588B" BorderThickness="2" CornerRadius="10" >
+                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
+                    </Border>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+        <Button x:Name="task18_3" Click="task18_3_Click" Width="110" Height="50" Margin="0 108 0 0"  Content="A∧B∨A∧C∨¬C" Foreground="#53588B" Visibility="Hidden" Cursor="Hand">
+            <Button.Template>
+                <ControlTemplate TargetType="Button">
+                    <Border Background="Transparent" BorderBrush="#53588B" BorderThickness="2" CornerRadius="10" >
+                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
+                    </Border>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+
+
+
+
+
+
+
+        <Button x:Name="btn19" Click="btn19_Click" Width="50" Height="30" Margin="0 345 634 0" Visibility="Hidden" Content="19" Foreground="#EFEF6E">
+            <Button.Template>
+                <ControlTemplate TargetType="Button">
+                    <Border Background="#656556" BorderBrush="#EFEF6E" BorderThickness="2" CornerRadius="10">
+                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
+                    </Border>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+
+        <StackPanel>
+            <TextBlock x:Name="task19" Foreground="White" FontSize="25" Margin="50 8 0 0" Visibility="Hidden" Text="Запишите X, Y и Z чтобы только одно из них было больше 80"/>
+        </StackPanel>
+        <TextBlock x:Name="task19_1" Foreground="White" FontSize="25" Margin="330 208 0 0" Visibility="Hidden">X=</TextBlock>
+        <TextBlock x:Name="task19_2" Foreground="White" FontSize="25" Margin="330 260 0 0" Visibility="Hidden">Y=</TextBlock>
+        <TextBlock x:Name="task19_3" Foreground="White" FontSize="25" Margin="330 306 0 0" Visibility="Hidden">Z=</TextBlock>
+        <TextBox x:Name="task19_4" Height="40" Width="100" FontSize="25" Margin="40 0 0 0" Visibility="Hidden" Background="White" Text=""  Cursor=""></TextBox>
+        <TextBox x:Name="task19_5" Height="40" Width="100" FontSize="25" Margin="40 100 0 0" Visibility="Hidden" Background="White" Text="" Cursor=""></TextBox>
+        <TextBox x:Name="task19_6" Height="40" Width="100" FontSize="25" Margin="40 200 0 0" Visibility="Hidden" Background="White" Text=""  Cursor=""></TextBox>
+        <Button x:Name="Check11" Click="Check11_Click" Margin="0 380 0 0" FontSize="25" Height="50" Width="210" Content="проверить" Visibility="Hidden" Background="Transparent" Foreground="White" BorderBrush="White"></Button>
+
+
+
+
+
+
+        <Button x:Name="btn20" Click="btn20_Click"   Width="50" Height="30" Margin="0 412 740 0" Visibility="Hidden" Content="20" Foreground="#EFEF6E">
+            <Button.Template>
+                <ControlTemplate TargetType="Button">
+                    <Border Background="#656556" BorderBrush="#EFEF6E" BorderThickness="2" CornerRadius="10">
+                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
+                    </Border>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+        <StackPanel>
+            <TextBlock Foreground="White" Margin="25 20 0 0" FontSize="18" x:Name="task20" Visibility="Hidden">
+   Вычислите значение логического выражения, описывающие область определения функций
+        </TextBlock>
+        </StackPanel>
+
+        <StackPanel Margin="145 200 0 0">
+            <TextBlock Foreground="White" x:Name="task20_1" FontSize="20" Visibility="Hidden">
+y=1-cos3x
+            </TextBlock>
+            <TextBox x:Name="task20_2" Text="" Background="White" FontSize="23" Height="40" Width="80" Margin="-272 -30 0 0" Visibility="Hidden"></TextBox>
+        </StackPanel>
+
+        <StackPanel Margin="460 200 0 0">
+            <TextBlock Foreground="White" FontSize="20" Visibility="Hidden" x:Name="task20_3">
+y=x/(x-3)²
+            </TextBlock>
+            <TextBox x:Name="task20_4"  Text="" Background="White" FontSize="23" Height="40" Width="80" Margin="18 -30 0 0" Visibility="Hidden"></TextBox>
+        </StackPanel>
+
+
+        <Button x:Name="Check12" Click="Check12_Click" Margin="0 350 0 0" FontSize="25" Height="50" Width="210" Content="проверить" Visibility="Hidden" Background="Transparent" Foreground="White" BorderBrush="White"></Button>
+
+
+
+
+
+
+
+        <Button x:Name="btn21" Click="btn21_Click" Width="50" Height="30" Margin="0 412 634 0" Visibility="Hidden" Content="21" Foreground="#EFEF6E">
+            <Button.Template>
+                <ControlTemplate TargetType="Button">
+                    <Border Background="#656556" BorderBrush="#EFEF6E" BorderThickness="2" CornerRadius="10">
+                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
+                    </Border>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+        <TextBlock x:Name="task21" Foreground="White" Margin="85 20 0 0" FontSize="25" Visibility="Hidden">
+ Выислите значение логиеских выражени при следующих <LineBreak/>
+ ㅤㅤзнаениях логиеских переменных Z=0 Y=0 Z=1
+        </TextBlock>
+
+        <Button x:Name="task21_1" Click="task21_1_Click" Width="110" Height="50" Margin="0 0 0 108"  Content="(X∧¬Y)∨Z" Foreground="#53588B" Visibility="Hidden" Cursor="Hand">
+            <Button.Template>
+                <ControlTemplate TargetType="Button">
+                    <Border Background="Transparent" BorderBrush="#53588B" BorderThickness="2" CornerRadius="10" >
+                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
+                    </Border>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+        <Button x:Name="task21_2" Click="task21_2_Click" Width="110" Height="50" Margin="0 0 0 0"  Content="X∧(¬Y∨Z)" Foreground="#53588B" Visibility="Hidden" Cursor="Hand">
+            <Button.Template>
+                <ControlTemplate TargetType="Button">
+                    <Border Background="Transparent" BorderBrush="#53588B" BorderThickness="2" CornerRadius="10" >
+                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
+                    </Border>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+        <Button x:Name="task21_3" Click="task21_3_Click" Width="110" Height="50" Margin="0 108 0 0"  Content="A∧B∨A∧C∨¬C X∨(¬(Y∧Z))" Foreground="#53588B" Visibility="Hidden" Cursor="Hand">
+            <Button.Template>
+                <ControlTemplate TargetType="Button">
+                    <Border Background="Transparent" BorderBrush="#53588B" BorderThickness="2" CornerRadius="10" >
+                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
+                    </Border>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+
+
+
+
+
+        <Button x:Name="btn22" Click="btn22_Click" Width="50" Height="30" Margin="634 0 0 316" Visibility="Hidden" Content="22" Foreground="#EFEF6E">
+            <Button.Template>
+                <ControlTemplate TargetType="Button">
+                    <Border Background="#656556" BorderBrush="#EFEF6E" BorderThickness="2" CornerRadius="10">
+                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
+                    </Border>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+        <StackPanel>
+            <TextBlock Foreground="White" Margin="80 20 0 0" FontSize="18" x:Name="task22" Visibility="Hidden">
+   Вычислите значение логического выражения, истенное для следующих условий
+            </TextBlock>
+        </StackPanel>
+
+        <StackPanel Margin="145 200 0 0">
+            <TextBlock Foreground="White" x:Name="task22_1" FontSize="20" Visibility="Hidden">
+неверное, что x≤-5 и x>5
+            </TextBlock>
+            <TextBox x:Name="task22_2" Text="" Background="White" FontSize="23" Height="40" Width="80" Margin="-50 -30 0 0" Visibility="Hidden"></TextBox>
+        </StackPanel>
+
+        <StackPanel Margin="145 250 0 0">
+            <TextBlock Foreground="White" FontSize="20"  x:Name="task22_3" Visibility="Hidden">
+-3.5≺y≤8.1 и y≠0
+            </TextBlock>
+            <TextBox x:Name="task22_4"  Text="" Background="White" FontSize="23" Height="40" Width="80" Margin="-50 -30 0 0" Visibility="Hidden"></TextBox>
+        </StackPanel>
+
+
+        <Button x:Name="Check13" Click="Check13_Click" Margin="0 350 0 0" FontSize="25" Height="50" Width="210" Content="проверить" Visibility="Hidden" Background="Transparent" Foreground="White" BorderBrush="White"></Button>
+
+
+
+
+
+
+        <Button x:Name="btn23" Click="btn23_Click" Width="50" Height="30" Margin="740 0 0 316" Visibility="Hidden" Content="23" Foreground="#EFEF6E">
+            <Button.Template>
+                <ControlTemplate TargetType="Button">
+                    <Border Background="#656556" BorderBrush="#EFEF6E" BorderThickness="2" CornerRadius="10">
+                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
+                    </Border>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+        <StackPanel>
+            <TextBlock x:Name="task23" Foreground="White" FontSize="20" Margin="40 8 0 0" Visibility="Hidden" Text="Запишите А, чтобы оно принадлежало интервыалу от -10 до -1 или от 2 до 15"/>
+        </StackPanel>
+        <TextBlock x:Name="task23_1" Foreground="White" FontSize="25" Margin="330 208 0 0" Visibility="Hidden">A=</TextBlock>
+        <TextBox x:Name="task23_2" Height="40" Width="100" FontSize="25" Margin="40 0 0 0" Background="White" Text="" Visibility="Hidden"></TextBox>
+        <Button x:Name="Check14" Click="Check14_Click" Margin="0 380 0 0" FontSize="25" Height="50" Width="210" Content="проверить" Visibility="Hidden" Background="Transparent" Foreground="White" BorderBrush="White"></Button>
+
+
+
+
+
+
+        <Button x:Name="btn24" Click="btn24_Click" Width="50" Height="30" Margin="634 0 0 250" Visibility="Hidden" Content="24" Foreground="#EFEF6E">
+            <Button.Template>
+                <ControlTemplate TargetType="Button">
+                    <Border Background="#656556" BorderBrush="#EFEF6E" BorderThickness="2" CornerRadius="10">
+                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
+                    </Border>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+        <StackPanel>
+            <TextBlock x:Name="task24" Foreground="White" FontSize="20" Margin="100 8 0 0" Visibility="Hidden" Text="Запишите А, чтобы оно являлось черехзначным, но не равно 4999"/>
+        </StackPanel>
+        <TextBlock x:Name="task24_1" Foreground="White" FontSize="25" Margin="330 208 0 0" Visibility="Hidden">A=</TextBlock>
+        <TextBox x:Name="task24_2" Height="40" Width="100" FontSize="25" Margin="40 0 0 0" Background="White" Text="" Visibility="Hidden"></TextBox>
+        <Button x:Name="Check15" Click="Check15_Click" Margin="0 380 0 0" FontSize="25" Height="50" Width="210" Content="проверить" Visibility="Hidden" Background="Transparent" Foreground="White" BorderBrush="White"></Button>
+
+
+
+
+        <Button x:Name="btn25" Click="btn25_Click" Width="50" Height="30" Margin="740 0 0 250" Visibility="Hidden" Content="25" Foreground="#EFEF6E">
+            <Button.Template>
+                <ControlTemplate TargetType="Button">
+                    <Border Background="#656556" BorderBrush="#EFEF6E" BorderThickness="2" CornerRadius="10">
+                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
+                    </Border>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+        <StackPanel>
+            <TextBlock x:Name="task25" Foreground="White" FontSize="25" Margin="135 10 0 0" Visibility="Hidden">введи знаения и проверь какая дробь больше</TextBlock>
+        </StackPanel>
+        <StackPanel>
+            <TextBlock x:Name="task25_1" Foreground="White" FontSize="25" Margin="180 150 0 0" Visibility="Hidden">A=</TextBlock>
+            <TextBlock x:Name="task25_2" Foreground="White" FontSize="25" Margin="180 30 0 0" Visibility="Hidden">B=</TextBlock>
+            <TextBox x:Name="task25_3" Background="White" Width="100" Height="50" FontSize="25" Margin="-240 -153 0 0" Visibility="Hidden"></TextBox>
+            <TextBox x:Name="task25_4" Background="White" Width="100" Height="50" FontSize="25" Margin="-240 -40 0 0" Visibility="Hidden"></TextBox>
+        </StackPanel>
+        <StackPanel>
+            <TextBlock x:Name="task25_9" Foreground="White" FontSize="25" Margin="222 170 0 0" Visibility="Hidden">___________</TextBlock>
+            <TextBlock x:Name="task25_10" Foreground="White" FontSize="25" Margin="466 -33 0 0" Visibility="Hidden">___________</TextBlock>
+        </StackPanel>
+        <StackPanel Margin="500 0 0 0">
+            <TextBlock x:Name="task25_5" Foreground="White" FontSize="25" Margin="98 150 0 0" Visibility="Hidden">=C</TextBlock>
+            <TextBlock x:Name="task25_6" Foreground="White" FontSize="25" Margin="98 30 0 0" Visibility="Hidden">=D</TextBlock>
+            <TextBox x:Name="task25_7" Background="White" Width="100" Height="50" FontSize="25" Margin="-252 -153 0 0" Visibility="Hidden"></TextBox>
+            <TextBox x:Name="task25_8" Background="White" Width="100" Height="50" FontSize="25" Margin="-252 -40 0 0" Visibility="Hidden"></TextBox>
+        </StackPanel>
+        <Button x:Name="Check25" Click="Check25_Click" Width="100" Height="50" BorderBrush="White" Foreground="White" Margin="0 -47 0 0" Visibility="Hidden">сравнить</Button>
+
+
+        <Button x:Name="btn26" Click="btn26_Click" Width="50" Height="30" Margin="634 0 0 185" Visibility="Hidden" Content="26" Foreground="#EFEF6E">
+            <Button.Template>
+                <ControlTemplate TargetType="Button">
+                    <Border Background="#656556" BorderBrush="#EFEF6E" BorderThickness="2" CornerRadius="10">
+                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
+                    </Border>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+        <StackPanel>
+            <TextBlock Foreground="White" Margin="80 20 0 0" FontSize="18" x:Name="task26" Visibility="Hidden">
+   Вычислите значение логического выражения, истенное для следующих условий
+            </TextBlock>
+        </StackPanel>
+
+        <StackPanel Margin="145 200 0 0">
+            <TextBlock Foreground="White" x:Name="task26_1" FontSize="20" Visibility="Hidden">
+неверное, что x>0 и x≺5
+            </TextBlock>
+            <TextBox x:Name="task26_2" Text="" Background="White" FontSize="23" Height="40" Width="80" Margin="-50 -30 0 0" Visibility="Hidden"></TextBox>
+        </StackPanel>
+
+        <StackPanel Margin="145 250 0 0">
+            <TextBlock Foreground="White" FontSize="20"  x:Name="task26_3" Visibility="Hidden">
+0≺y≤6 и y≺7
+            </TextBlock>
+            <TextBox x:Name="task26_4"  Text="" Background="White" FontSize="23" Height="40" Width="80" Margin="-50 -30 0 0" Visibility="Hidden"></TextBox>
+        </StackPanel>
+
+
+        <Button x:Name="Check16" Click="Check16_Click" Margin="0 350 0 0" FontSize="25" Height="50" Width="210" Content="проверить" Visibility="Hidden" Background="Transparent" Foreground="White" BorderBrush="White"></Button>
+
+
+
+        <Button x:Name="btn27" Click="btn27_Click" Width="50" Height="30" Margin="740 0 0 185" Visibility="Hidden" Content="27" Foreground="#EFEF6E">
+            <Button.Template>
+                <ControlTemplate TargetType="Button">
+                    <Border Background="#656556" BorderBrush="#EFEF6E" BorderThickness="2" CornerRadius="10">
+                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
+                    </Border>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+        <StackPanel>
+            <TextBlock Foreground="White" Margin="80 20 0 0" FontSize="18" x:Name="task27" Visibility="Hidden">
+   Вычислите значение логического выражения, истенное для следующих условий
+            </TextBlock>
+        </StackPanel>
+
+        <StackPanel Margin="145 200 0 0">
+            <TextBlock Foreground="White" x:Name="task27_1" FontSize="20" Visibility="Hidden">
+x>3 или x≺-1
+            </TextBlock>
+            <TextBox x:Name="task27_2" Text="" Background="White" FontSize="23" Height="40" Width="80" Margin="-50 -30 0 0" Visibility="Hidden"></TextBox>
+        </StackPanel>
+
+        <StackPanel Margin="145 250 0 0">
+            <TextBlock Foreground="White" FontSize="20"  x:Name="task27_3" Visibility="Hidden">
+-4≺y≤2 и y>0
+            </TextBlock>
+            <TextBox x:Name="task27_4" Text="" Background="White" FontSize="23" Height="40" Width="80" Margin="-50 -30 0 0" Visibility="Hidden"></TextBox>
+        </StackPanel>
+
+
+        <Button x:Name="Check17" Click="Check17_Click" Margin="0 350 0 0" FontSize="25" Height="50" Width="210" Content="проверить" Visibility="Hidden" Background="Transparent" Foreground="White" BorderBrush="White"></Button>
+
+
+
+
+        <Button x:Name="btn28" Click="btn28_Click" Width="50" Height="30" Margin="634 0 0 120" Visibility="Hidden" Content="28" Foreground="#EFEF6E">
+            <Button.Template>
+                <ControlTemplate TargetType="Button">
+                    <Border Background="#656556" BorderBrush="#EFEF6E" BorderThickness="2" CornerRadius="10">
+                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
+                    </Border>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+        <StackPanel>
+            <TextBlock Foreground="White" Margin="25 20 0 0" FontSize="18" x:Name="task28" Visibility="Hidden">
+   Вычислите значение логического выражения, описывающие область определения функций
+            </TextBlock>
+        </StackPanel>
+
+        <StackPanel Margin="145 200 0 0">
+            <TextBlock Foreground="White" x:Name="task28_1" FontSize="20" Visibility="Hidden">
+y=1/(x-3)²
+            </TextBlock>
+            <TextBox x:Name="task28_2" Text="" Background="White" FontSize="23" Height="40" Width="80" Margin="-272 -30 0 0" Visibility="Hidden"></TextBox>
+        </StackPanel>
+
+
+
+        <Button x:Name="Check28" Click="Check28_Click" Margin="0 350 0 0" FontSize="25" Height="50" Width="210" Content="проверить" Visibility="Hidden" Background="Transparent" Foreground="White" BorderBrush="White"></Button>
+
+
+
+
+        <Button x:Name="btn29" Click="btn29_Click" Width="50" Height="30" Margin="740 0 0 120" Visibility="Hidden" Content="29" Foreground="#EFEF6E">
+            <Button.Template>
+                <ControlTemplate TargetType="Button">
+                    <Border Background="#656556" BorderBrush="#EFEF6E" BorderThickness="2" CornerRadius="10">
+                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
+                    </Border>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+        <StackPanel>
+            <TextBlock Foreground="White" Margin="25 20 0 0" FontSize="18" x:Name="task29" Visibility="Hidden">
+   Вычислите значение логического выражения, описывающие область определения функций
+            </TextBlock>
+        </StackPanel>
+
+        <StackPanel Margin="145 200 0 0">
+            <TextBlock Foreground="White" x:Name="task29_1" FontSize="20" Visibility="Hidden">
+y = ctg 2x
+            </TextBlock>
+            <TextBox x:Name="task29_2" Text="" Background="White" FontSize="23" Height="40" Width="80" Margin="-272 -30 0 0" Visibility="Hidden"></TextBox>
+        </StackPanel>
+
+
+
+        <Button x:Name="Check29" Click="Check29_Click" Margin="0 350 0 0" FontSize="25" Height="50" Width="210" Content="проверить" Visibility="Hidden" Background="Transparent" Foreground="White" BorderBrush="White"></Button>
+
+
+
+        <Button x:Name="btn30" Click="btn30_Click" Width="50" Height="30" Margin="634 0 0 54" Visibility="Hidden" Content="30" Foreground="#EFEF6E">
+            <Button.Template>
+                <ControlTemplate TargetType="Button">
+                    <Border Background="#656556" BorderBrush="#EFEF6E" BorderThickness="2" CornerRadius="10">
+                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
+                    </Border>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+        <StackPanel>
+            <TextBlock Foreground="White" Margin="25 20 0 0" FontSize="18" x:Name="task30" Visibility="Hidden">
+   Вычислите значение логического выражения, описывающие область определения функций
+            </TextBlock>
+        </StackPanel>
+
+        <StackPanel Margin="145 200 0 0">
+            <TextBlock Foreground="White" x:Name="task30_1" FontSize="20" Visibility="Hidden">
+y=1-cos3x
+            </TextBlock>
+            <TextBox x:Name="task30_2" Text="" Background="White" FontSize="23" Height="40" Width="80" Margin="-272 -30 0 0" Visibility="Hidden"></TextBox>
+        </StackPanel>
+
+        <StackPanel Margin="460 200 0 0">
+            <TextBlock Foreground="White" FontSize="20" Visibility="Hidden" x:Name="task30_3">
+y=x/(x-3)²
+            </TextBlock>
+            <TextBox x:Name="task30_4"  Text="" Background="White" FontSize="23" Height="40" Width="80" Margin="18 -30 0 0" Visibility="Hidden"></TextBox>
+        </StackPanel>
+
+
+        <Button x:Name="Check30" Click="Check30_Click" Margin="0 350 0 0" FontSize="25" Height="50" Width="210" Content="проверить" Visibility="Hidden" Background="Transparent" Foreground="White" BorderBrush="White"></Button>
+
+
+
+
+
+
+
+
+        <Button x:Name="btn31" Click="btn31_Click" Width="50" Height="30" Margin="740 0 0 54" Visibility="Hidden" Content="31" Foreground="#EFEF6E">
+            <Button.Template>
+                <ControlTemplate TargetType="Button">
+                    <Border Background="#656556" BorderBrush="#EFEF6E" BorderThickness="2" CornerRadius="10">
+                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
+                    </Border>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+        <StackPanel>
+            <TextBlock Foreground="White" Margin="80 20 0 0" FontSize="18" x:Name="task31" Visibility="Hidden">
+   Вычислите значение логического выражения, истенное для следующих условий
+            </TextBlock>
+        </StackPanel>
+
+        <StackPanel Margin="145 50 0 0">
+            <TextBlock Foreground="White" x:Name="task31_1" FontSize="20" Visibility="Hidden">
+только одна из чисел А и В четное
+            </TextBlock>
+        </StackPanel>
+        <StackPanel Margin="145 50 0 0">
+            <TextBlock Foreground="White" x:Name="task31_2" FontSize="20" Margin="100 30 0 0" Visibility="Hidden">А=</TextBlock>
+            <TextBlock Foreground="White" x:Name="task31_3" FontSize="20" Margin="100 30 0 0" Visibility="Hidden">B=</TextBlock>
+            <TextBox x:Name="task31_4" Text="" Background="White" FontSize="23" Height="40" Width="80" Margin="-300 -120 0 0" Visibility="Hidden"></TextBox>
+            <TextBox x:Name="task31_5" Text="" Background="White" FontSize="23" Height="40" Width="80" Margin="-300 -30 0 0" Visibility="Hidden"></TextBox>
+        </StackPanel>
+        <StackPanel Margin="145 170 0 0">
+            <TextBlock Foreground="White" x:Name="task31_6" FontSize="20" Visibility="Hidden">
+каждое из чисел А,В,С кратно трем
+            </TextBlock>
+        </StackPanel>
+        <StackPanel Margin="145 170 0 0">
+            <TextBlock Foreground="White" x:Name="task31_7" FontSize="20" Margin="100 30 0 0" Visibility="Hidden">А=</TextBlock>
+            <TextBlock Foreground="White" x:Name="task31_8" FontSize="20" Margin="100 30 0 0" Visibility="Hidden">B=</TextBlock>
+            <TextBlock Foreground="White" x:Name="task31_9" FontSize="20" Margin="100 30 0 0" Visibility="Hidden">С=</TextBlock>
+            <TextBox x:Name="task31_10" Text="" Background="White" FontSize="23" Height="40" Width="80" Margin="-300 -240 0 0" Visibility="Hidden"></TextBox>
+            <TextBox x:Name="task31_11" Text="" Background="White" FontSize="23" Height="40" Width="80" Margin="-300 -130 0 0" Visibility="Hidden"></TextBox>
+            <TextBox x:Name="task31_12" Text="" Background="White" FontSize="23" Height="40" Width="80" Margin="-300 -30 0 0" Visibility="Hidden"></TextBox>
+        </StackPanel>
+        <Button x:Name="Check31" Click="Check31_Click" Visibility="Hidden" Margin="0 350 0 0" FontSize="25" Height="50" Width="210" Content="проверить" Background="Transparent" Foreground="White" BorderBrush="White"></Button>
+
+
+
+
+
+
+        <Button x:Name="btn32" Click="btn32_Click" Width="50" Height="30" Margin="634 11 0 0" Visibility="Hidden" Content="32" Foreground="#EFEF6E">
+            <Button.Template>
+                <ControlTemplate TargetType="Button">
+                    <Border Background="#656556" BorderBrush="#EFEF6E" BorderThickness="2" CornerRadius="10">
+                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
+                    </Border>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+        <Button x:Name="btn33" Click="btn33_Click" Width="50" Height="30" Margin="740 11 0 0" Visibility="Hidden" Content="33" Foreground="#EFEF6E">
+            <Button.Template>
+                <ControlTemplate TargetType="Button">
+                    <Border Background="#656556" BorderBrush="#EFEF6E" BorderThickness="2" CornerRadius="10">
+                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
+                    </Border>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+        
+        
+        
+        <Button x:Name="btn34" Click="btn34_Click" Width="50" Height="30" Margin="634 78 0 0" Visibility="Hidden" Content="34" Foreground="#EFEF6E">
+            <Button.Template>
+                <ControlTemplate TargetType="Button">
+                    <Border Background="#656556" BorderBrush="#EFEF6E" BorderThickness="2" CornerRadius="10">
+                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
+                    </Border>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+        <StackPanel>
+            <TextBlock Foreground="White" x:Name="task34" FontSize="25" Margin="310 10 0 0" Visibility="Hidden">Отдохни 5 минут</TextBlock>
+        </StackPanel>
+
+        <StackPanel>
+            <TextBlock Foreground="White" x:Name="task34_1" FontSize="25" Margin="290 205 0 0" Visibility="Hidden">можешь продолжать</TextBlock>
+        </StackPanel>
+
+        <Grid>
+            <TextBlock x:Name="TimerTextBlock" Width="400" Foreground="White" FontSize="25" Margin="70 200 0 0" Visibility="Hidden"/>
+        </Grid>
+
+        <StackPanel>
+            <TextBlock Foreground="Red" x:Name="task0" FontSize="25" Margin="350 205 0 0" Visibility="Hidden">не успел</TextBlock>
+        </StackPanel>
+
+
+
+        <Button x:Name="btn35" Click="btn35_Click" Width="50" Height="30" Margin="740 78 0 0" Visibility="Hidden" Content="35" Foreground="#EFEF6E">
+            <Button.Template>
+                <ControlTemplate TargetType="Button">
+                    <Border Background="#656556" BorderBrush="#EFEF6E" BorderThickness="2" CornerRadius="10">
+                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
+                    </Border>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+        <Button x:Name="btn36" Click="btn36_Click" Width="50" Height="30" Margin="634 145 0 0" Visibility="Hidden" Content="36" Foreground="#EFEF6E">
+            <Button.Template>
+                <ControlTemplate TargetType="Button">
+                    <Border Background="#656556" BorderBrush="#EFEF6E" BorderThickness="2" CornerRadius="10">
+                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
+                    </Border>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+        <Button x:Name="btn37" Click="btn37_Click" Width="50" Height="30" Margin="740 145 0 0" Visibility="Hidden" Content="37" Foreground="#EFEF6E">
+            <Button.Template>
+                <ControlTemplate TargetType="Button">
+                    <Border Background="#656556" BorderBrush="#EFEF6E" BorderThickness="2" CornerRadius="10">
+                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
+                    </Border>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+        <Button x:Name="btn38" Click="btn38_Click" Width="50" Height="30" Margin="634 212 0 0" Visibility="Hidden" Content="38" Foreground="#EFEF6E">
+            <Button.Template>
+                <ControlTemplate TargetType="Button">
+                    <Border Background="#656556" BorderBrush="#EFEF6E" BorderThickness="2" CornerRadius="10">
+                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
+                    </Border>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+        <Button x:Name="btn39" Click="btn39_Click" Width="50" Height="30" Margin="740 212 0 0" Visibility="Hidden" Content="39" Foreground="#EFEF6E">
+            <Button.Template>
+                <ControlTemplate TargetType="Button">
+                    <Border Background="#656556" BorderBrush="#EFEF6E" BorderThickness="2" CornerRadius="10">
+                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
+                    </Border>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+        <Button x:Name="btn40" Click="btn40_Click" Width="50" Height="30" Margin="634 278 0 0" Visibility="Hidden" Content="40" Foreground="#EFEF6E">
+            <Button.Template>
+                <ControlTemplate TargetType="Button">
+                    <Border Background="#656556" BorderBrush="#EFEF6E" BorderThickness="2" CornerRadius="10">
+                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
+                    </Border>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+        <Button x:Name="btn41" Click="btn41_Click" Width="50" Height="30" Margin="740 278 0 0" Visibility="Hidden" Content="41" Foreground="#EFEF6E">
+            <Button.Template>
+                <ControlTemplate TargetType="Button">
+                    <Border Background="#656556" BorderBrush="#EFEF6E" BorderThickness="2" CornerRadius="10">
+                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
+                    </Border>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+        <Button x:Name="btn42" Click="btn42_Click" Width="50" Height="30" Margin="634 345 0 0" Visibility="Hidden" Content="42" Foreground="#EFEF6E">
+            <Button.Template>
+                <ControlTemplate TargetType="Button">
+                    <Border Background="#656556" BorderBrush="#EFEF6E" BorderThickness="2" CornerRadius="10">
+                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
+                    </Border>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+        <Button x:Name="btn43" Click="btn43_Click" Width="50" Height="30" Margin="740 345 0 0" Visibility="Hidden" Content="43" Foreground="#EFEF6E">
+            <Button.Template>
+                <ControlTemplate TargetType="Button">
+                    <Border Background="#656556" BorderBrush="#EFEF6E" BorderThickness="2" CornerRadius="10">
+                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
+                    </Border>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+        <TextBlock x:Name="task43"  Foreground="White" Margin="335 20 0 0" FontSize="25" Visibility="Hidden">Дкит или Дпк?</TextBlock>
+        <Button x:Name="dkit" Click="dkit_Click" Foreground="White" BorderBrush="White" Margin="0 0 0 38" Width="100" Visibility="Hidden">Дкит</Button>
+        <Button x:Name="dpk" Click="dpk_Click" Foreground="White" BorderBrush="White" Margin="0 46 0 0" Width="100" Visibility="Hidden">Дпк</Button>
+        <TextBlock x:Name="otchis" Foreground="White" FontSize="25" Margin="360 400 0 0" Visibility="Hidden">👎отчислен👎</TextBlock>
+        <TextBlock x:Name="horosh" Foreground="White" FontSize="25" Margin="354 400 0 0" Visibility="Hidden">⭐️хорош⭐️</TextBlock>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <Button x:Name="btn44" Click="btn44_Click" Width="50" Height="30" Margin="634 412 0 0" Visibility="Hidden" Content="44" Foreground="#EFEF6E">
+            <Button.Template>
+                <ControlTemplate TargetType="Button">
+                    <Border Background="#656556" BorderBrush="#EFEF6E" BorderThickness="2" CornerRadius="10">
+                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
+                    </Border>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+        <TextBlock x:Name="task44"  Foreground="White" Margin="335 20 0 0" FontSize="25" Visibility="Hidden">Русалка?</TextBlock>
+        <Button x:Name="riba" Click="riba_Click" Foreground="White" BorderBrush="White" Margin="0 0 0 38" Width="100" Visibility="Hidden">рыба</Button>
+        <Button x:Name="myaso" Click="myaso_Click" Foreground="White" BorderBrush="White" Margin="0 46 0 0" Width="100" Visibility="Hidden">мясо</Button>
+        <TextBlock x:Name="chapa" Foreground="White" FontSize="25" Margin="360 400 0 0" Visibility="Hidden">чипи чипи</TextBlock>
+        <TextBlock x:Name="chipi" Foreground="White" FontSize="25" Margin="354 400 0 0" Visibility="Hidden">чапа чапа</TextBlock>
+
+        <Button x:Name="btn45" Click="btn45_Click" Width="50" Height="30" Margin="740 412 0 0" Visibility="Hidden" Content="45" Foreground="#EFEF6E">
+            <Button.Template>
+                <ControlTemplate TargetType="Button">
+                    <Border Background="#656556" BorderBrush="#EFEF6E" BorderThickness="2" CornerRadius="10">
+                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
+                    </Border>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+        <TextBlock x:Name="task45"  Foreground="White" Margin="335 20 0 0" FontSize="25" Visibility="Hidden">Гвоздь?</TextBlock>
+        <Button x:Name="top" Click="top_Click" Foreground="White" BorderBrush="White" Margin="0 0 0 38" Width="150" Visibility="Hidden">⭐️топ⭐️</Button>
+        <Button x:Name="luchiy" Click="luchiy_Click" Foreground="White" BorderBrush="White" Margin="0 46 0 0" Width="150" Visibility="Hidden">⭐️лучший⭐️</Button>
+        <TextBlock x:Name="verno" Foreground="White" FontSize="25" Margin="360 400 0 0" Visibility="Hidden">⭐️верно⭐️</TextBlock>
+        
+    </Grid>
+</Window>
